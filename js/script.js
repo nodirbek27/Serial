@@ -26,8 +26,8 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 
   function showTabContent(i=0) {
-    tabsContent[i].classList.add('show', 'fade');
-    tabsContent[i].classList.remove('hide');
+    tabsContent[i].classList.add('show');
+    tabsContent[i].classList.remove('hide', 'fade');
     tabs[i].classList.add('tabheader__item_active');
   }
 
@@ -48,7 +48,7 @@ showTabContent();
 
 
   // timer
-  const deadline = '2023-02-12';
+  const deadline = '2023-05-15';
 
   function timeRemainig(endtime) {
     let days, hours, minutes, seconds;
@@ -106,7 +106,6 @@ showTabContent();
 
 
   // Modal
-
   const modalTrigger = document.querySelectorAll('[data-modal]'),
     modal = document.querySelector('.modal'),
     modalClose = document.querySelector('[data-close]')
